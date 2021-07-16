@@ -1,0 +1,24 @@
+Assignment 1
+List out 20 use cases of the Internet of Things.
+
+Smart home
+Daily medicine reminder
+Traffic lights control
+Water quality Sensors
+Weather forecast model
+Remote Patient monitoring
+Elderly Care Monitoring
+Bike Helmet Crash Sensors
+RFID Smart Guns
+Smart Tennis Rackets
+Wi-Fi Type Writers
+Smart Smoke Detectors
+Air Quality Sensors
+Smart Fire Extinguishers
+Flood Alert Sensors
+Home Energy Monitoring and Control
+Smart Door Locks
+Concrete Infrastructure Monitoring
+Soil monitoring
+Retail Analytics
+Predictive machine maintenance
