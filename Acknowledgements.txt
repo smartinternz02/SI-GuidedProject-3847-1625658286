@@ -1,0 +1,5 @@
+ACKNOWLEDGEMENTS-
+
+I hereby present my Assignments for the IOT internship. I would like to thank my mentor for making the various concepts easy to understand and providing invaluable guidance while completing the assignments.
+
+Though every care has been taken by me to reduce mistakes, I deeply apologize for bad coding and inneficient solutions.
