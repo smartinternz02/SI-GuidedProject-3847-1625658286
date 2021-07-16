@@ -1,0 +1,47 @@
+#include<Servo.h>
+Servo s;
+int i=0;
+
+void setup()
+{
+  s.attach(4);
+  pinMode(2, OUTPUT);
+  pinMode(3, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  digitalWrite(2, LOW);
+  digitalWrite(2, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(2, LOW);
+  float dur = pulseIn(3,HIGH);
+  float dis = (dur*0.0343)/2;
+  Serial.print("Distance in cm:");
+  Serial.println(dis);
+  
+  /*The door will open when the 
+  vehice is within 3 meters to 10 cm near the door*/
+  
+  if(dis<=300.00 and dis>=10.00){  
+  	s.write(i);
+    delay(50);
+    Serial.println("Status:Door opening");
+    i++;
+    
+    if(i==180){ //The door will be kept open for 2 seconds
+      delay(5000);
+    }
+  }
+  
+  /*The door will close when the 
+  above criteria fail*/
+  else{
+    s.write(i);
+    delay(50);
+    Serial.println("Status:Door Closing");
+    i--;
+  }
+  
+}
